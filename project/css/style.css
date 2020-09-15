@@ -1,0 +1,132 @@
+:root{
+    --main-color: #15CF74;
+
+}
+/*start head*/
+.head{
+    background-image: url(../images/ground-1.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom; 
+}
+.head .container .lang  {
+    padding: 27px 0 0px 0;
+}
+.head .container{
+    z-index: 3;
+    position: relative;
+}
+.head .container .lang h6{
+    margin-left: 11px;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 1px;
+}
+/**end lang*/
+/*start body head*/
+.head .container .body-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0 50px 0;
+}
+.body-head img{
+    width: 140px;
+    
+}
+.body-head p{
+    position: relative;
+    font-size: 34px;
+    color: #ffff;
+    width: 52%;
+    left: 58px;
+    font-weight: 900;
+}
+.body-head p::before {
+    content: " ";
+    margin-left: -26px;
+    background-color: #ffff;
+    width: 2px;
+    height: 80px;
+    position: absolute;
+    top: 11px;
+    font-weight: 100;
+}
+.ground-trans {
+    background-color: #2c3233a8;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 0;
+}
+/**end head*/
+/*start body-app*/
+.body-app{
+    padding: 80px 0 40px 0;
+    background-color: #F8F8F8;
+}
+.body-app .box{
+    text-align: left;
+    padding: 30px;
+}
+.body-app .box .main-box img {
+    width: 56px;
+    position: relative;
+    top: -26px;
+}
+.body-app .box .main-box{
+    padding: 0px 26px;
+    background-color: #fff;
+    border-radius: 22px;
+    box-shadow: 0px 0px 20px #21252508;
+    padding-bottom: 20px;
+}
+.body-app .box .main-box h6{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 6px;
+    
+}
+.body-app .box .main-box h3{
+    font-weight: 700;
+    font-size: 23px;
+}
+.body-app .box .main-box p{
+    font-size: 14px;
+    color: #000000ad;
+    line-height: 1.8;
+}
+/*start button style*/
+.button{
+    text-align: center;
+    padding: 50px;
+}
+.button a{
+    padding: 10px 40px;
+    border-radius: 25px;
+    background-color: #038DFE;
+    color: #fff;
+    text-decoration: none;
+    transition:  0.6s ;
+}
+.button a:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #038DFE;
+    border: 1px solid  #038DFE;
+    
+}
+@media(max-width: 990px) {
+    .body-head p{
+        font-size: 25px;
+    }
+}
+@media(max-width: 770px) {
+    .body-head p{
+        font-size: 20px;
+        width: 49%;
+    }
+
+}
